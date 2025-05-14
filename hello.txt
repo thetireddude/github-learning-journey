@@ -2,3 +2,10 @@ hello
 
 i just learned how to change the default branch name from master to main
 I am not sure why it named my main branch master since all git versions after 2.28 should name their default branch main 
+
+i renamed the master branch of my local repo to main
+
+i couldn't see my changes after i pushed for the second time because I now had two branches in my GitHub repo --> master and main
+so, i tried to delete master from the remote repo. But, it wouldn't let me because master was still the default branch for my remote GitHub repo 
+
+so I learned to switch my GitHub default branch 
