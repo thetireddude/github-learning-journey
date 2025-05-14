@@ -10,3 +10,20 @@ so, i tried to delete master from the remote repo. But, it wouldn't let me becau
 Therefore, I learned to switch my GitHub default branch 
 
 On second thoughts, I have decided to maintain this repo, as a personal journal of sorts, to keep track of all issues I encountered while learning how to commit and push files from a local to a my remote repo
+
+I also thought that, now that the instructions are fresh in my head, I should write them down
+
+git init 				--> initializes a new local repo in your current directory
+git status 				--> shows all untracked/modified files
+git add <filename> / git add . 		--> stages (prepares for a commit) the specific file/ all files 
+git commit -m "<message>" 		--> commits the files. the "-m" denotes the message for the commit 
+git remote add origin <repo link> 	--> links your local repo to the online GitHub repo on the website
+git remote set-url <link> 		--> changes the link of your origin (origin is the name for your remote Github repo)
+git push -u origin main 		--> pushes the commit to the main branch of your GitHub repo 
+
+git branch 				--> lists all the branches in your local repo 
+git branch -r 				--> lists all branches in your remote repo
+git branch -m master main 		--> changes the name of the master branch to main
+git switch main 			--> switches to the specified branch, in this case, main 
+
+git push origin --delete master 	--> deletes the master branch in the remote repo 
