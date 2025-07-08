@@ -33,10 +33,7 @@ I started "learning" git again.
 I started The Odin Project and they give you an intro to Git/ GitHub before anything else which I find nice.
 
 So far, I learned how to clone a repository using SSH. 
-You go to your GitHub repo, copy the SSH link, and in the terminal run the command:
-
-    git clone <repo link> --> clones your repo into your current directory (make sure to create and move into the directory where
-    you want to store your repo locally)
+You go to your GitHub repo, copy the SSH link, and run the clone command in the terminal.
 
 it's also good to take into account that while setting up Git, I configured my username and email in the CLI 
 
@@ -59,6 +56,17 @@ I also set up my SSH key from the CLI beforehand
 
 this SSH key is basically used to avoid having to enter your pw every time you push. After creating a key, you need to link 
 it to you GitHub by going to "Settings -> SSH and GPG keys -> New SSH Key"
+
+most of the commands TOP (The Odin Project) is going over are those that I've learnt before (yay!) but I did learn a few new things
+
+    git log     --> shows you your local repo history
+    git push     --> can be used in place of "git push origin main"/ "git push -u origin main" since we are working with a single
+                     branch and single remote repo (not necessary to specify origin and main)
+    git clone <repo link> --> clones your repo into your current directory (make sure to create and move into the directory where
+                              you want to store your repo locally)
+    git config --global core.editor "code --wait"     --> sets default text editor for commit message to vscode. this makes life 
+                                                          easier bcz even if you miss the "-m" flag in the commit command it wont
+                                                          open in vim. so, u can run only "git commit" too
 
 
 
