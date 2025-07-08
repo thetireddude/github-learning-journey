@@ -21,9 +21,46 @@ git remote add origin <repo link> 	--> links your local repo to the online GitHu
 git remote set-url <link> 		--> changes the link of your origin (origin is the name for your remote Github repo)
 git push -u origin main 		--> pushes the commit to the main branch of your GitHub repo 
 
-git branch 				--> lists all the branches in your local repo 
+git branch --> lists all the branches in your local repo 
 git branch -r 				--> lists all branches in your remote repo
 git branch -m master main 		--> changes the name of the master branch to main
 git switch main 			--> switches to the specified branch, in this case, main 
 
-git push origin --delete master 	--> deletes the master branch in the remote repo 
+git push origin --delete master   --> deletes the master branch in the remote repo 
+
+
+I started "learning" git again.
+I started The Odin Project and they give you an intro to Git/ GitHub before anything else which I find nice.
+
+So far, I learned how to clone a repository using SSH. 
+You go to your GitHub repo, copy the SSH link, and in the terminal run the command:
+
+git clone <repo link> --> clones your repo into your current directory (make sure to create and move into the directory where you
+                          want to store your repo locally)
+
+it's also good to take into account that while setting up Git, I configured my username and email in the CLI 
+
+git config --global user.name "<username>" --> sets your username for pushes/pulls
+git config --global user.email <email> --> sets your email. make sure this is the same as your GitHub account
+
+NOTE: if your email address is set to private in settings, then you have to copy a placeholder address from "Settings -> Email ->
+      Keep my email adresses private"
+
+      also the "--global" flag just means that the command applies to all repositories 
+      otherwise it would apply only to the current repo
+
+I also set up my SSH key from the CLI beforehand
+
+ls ~/.ssh/id_ed25519.pub   --> tells youu whether you already have an Ed25519 SSH key installed based on whether or not it exists
+ssh-keygen -t ed25519   --> generates a new SSH key (if you didnt have one already), will ask for location to save key to; you
+                            can leave this blank, will ask for a pw to encrypt the key; you could leave this blank as well.
+cat ~/.ssh/id_ed25519.pub   --> displau your SSH key
+
+this SSH key is basically used to avoid having to enter your pw every time you push. After creating a key, you need to link 
+it to you GitHub by going to "Settings -> SSH and GPG keys -> New SSH Key"
+
+
+
+
+
+
