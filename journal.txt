@@ -9,7 +9,7 @@ i couldn't see my changes after i pushed for the second time because I now had t
 so, i tried to delete master from the remote repo. But, it wouldn't let me because master was still the default branch for my remote GitHub repo 
 Therefore, I learned to switch my GitHub default branch 
 
-On second thoughts, I have decided to maintain this repo, as a personal journal of sorts, to keep track of all issues I encountered while learning how to commit and push files from a local to a my remote repo
+On second thoughts, I have decided to maintain this repo, as a personal journal of sorts, to keep track of all issues I encountered while learning how to commit and push files from a local repo to my remote repo
 
 I also thought that, now that the instructions are fresh in my head, I should write them down
 
